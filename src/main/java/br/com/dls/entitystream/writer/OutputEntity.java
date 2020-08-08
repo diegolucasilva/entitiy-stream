@@ -1,6 +1,6 @@
-package br.com.dls.entitystream.interceptor;
+package br.com.dls.entitystream.writer;
 
 public class OutputEntity {
-    
+
 
 }
