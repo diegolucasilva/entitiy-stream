@@ -8,11 +8,8 @@ import java.util.List;
 @Component
 public interface EntitySerializer {
 
-    OutputEntity serialize(List<Object> entities);
+    OutputEntity serialize(Object entity);
 
-    default void extractNestedEntitiesfromObjectToList(Object entity, List<Object> entities){
-
-    }
 
 
 }

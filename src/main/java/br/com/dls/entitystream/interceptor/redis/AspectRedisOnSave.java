@@ -26,9 +26,8 @@ class AspectRedisOnSave implements TransactionSaveInterceptor {
 
     public void interceptAfterSave(JoinPoint joinPoint, Object responseObject) {
         List<Object> objects = new ArrayList<>();
-        entitySerializer.extractNestedEntitiesfromObjectToList(responseObject,objects);
 
-        OutputEntity outputEntity = entitySerializer.serialize(objects);
+        OutputEntity outputEntity = entitySerializer.serialize(responseObject);
         dataWriter.writeOutPut(outputEntity);
 
     }
