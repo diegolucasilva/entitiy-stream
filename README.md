@@ -21,8 +21,7 @@ This implementions is responsable to intercept entities objects after saved in a
 
 - **RedisStreamWriter**: Write the serialized object in a redis stream.
 
-
-diagam image.....
+![Diagram](https://github.com/diegolucasilva/entitiy-stream/blob/master/entity-stream.jpg)
 
  
  
