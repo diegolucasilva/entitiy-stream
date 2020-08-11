@@ -17,10 +17,7 @@ This implementions is responsable to intercept entities objects after saved in a
     - **ObjectMapperBuilder**: It's a custom builder that using some classes above, to transform the objecto to json.
     - **CustomBeanSerializerModifier**: Replaces nested objects with their respective id. 
     - **PropertyNameStrategyMapper**: Replace the properties name with the annotation @collumn anotations in the entities.
-    - **SerializerForeignKey**: Replace the nested entities from some bean, with your respective primary key(@Id).
-
-
-
+    - **SerializerForeignKey**: Replace the nested entities from some bean, with your respective primary key(@Id). 
 - **RedisStreamWriter**: Write the serialized object in a redis stream.
 
 ![Diagram](https://github.com/diegolucasilva/entitiy-stream/blob/master/entity-stream.jpg)
