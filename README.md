@@ -14,9 +14,11 @@ It´s possible to extends this interfaces and creates other types of interceptor
 This implementions is responsable to intercept entities objects after saved in a redis hash. This objects are serialized in json format. After this, it´s write in a redis stream:
 - **AspectRedisOnSave**: Intercept saved objects(spring-data-redis) in a redis hash.
 - **EntityJsonRdbSerializer**: Serializer the intercepted entity object in json format.
-    - **EntityJsonRdbSerializer**: Replace the propertie name using some strategy.
-    - **EntityJsonRdbSerializer**: Replaces nested objects with their respective id. 
-    - **EntityJsonRdbSerializer**: More specific components 
+    - **ObjectMapperBuilder**: It's a custom builder that using some classes above, to transform the objecto to json.
+    - **CustomBeanSerializerModifier**: Replaces nested objects with their respective id. 
+    - **PropertyNameStrategyMapper**: Replace the properties name with the annotation @collumn anotations in the entities.
+    - **SerializerForeignKey**: Replace the nested entities from some bean, with your respective primary key(@Id).
+
 
 
 - **RedisStreamWriter**: Write the serialized object in a redis stream.
