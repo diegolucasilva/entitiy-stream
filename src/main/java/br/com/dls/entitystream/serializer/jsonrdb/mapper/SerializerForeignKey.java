@@ -1,4 +1,4 @@
-package br.com.dls.entitystream.serializer.jsonrdb;
+package br.com.dls.entitystream.serializer.jsonrdb.mapper;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
